@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #0A0C0F;
+  color: #ECEFF2;
+  font-family: -apple-system, system-ui, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0C0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262E36;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #323A42;
+}
+
+/* Selection */
+::selection {
+  background: rgba(91, 124, 158, 0.25);
+  color: #ECEFF2;
+}
+
+/* Links */
+a {
+  color: #5B7C9E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7C97B8;
+}
+
+/* Form elements */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5B7C9E !important;
+}
+
+button {
+  transition: all 0.18s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Animaciones */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  body {
+    font-size: 15px;
+  }
+}
